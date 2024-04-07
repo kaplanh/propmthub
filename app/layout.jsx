@@ -1,9 +1,7 @@
-
-import "./globals.css";
-
+import "@/styles/globals.css";
 // import Provider from "@components/Provider";
-// import Nav from "@components/Nav";
-// import Provider from "@components/Provider";
+import Nav from "@/components/Nav";
+import Provider from "@/components/Provider";
 import Favicon from "../public/assets/images/logo.svg";
 
 export const metadata = {
@@ -16,20 +14,19 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       {/* putting everyting inside of body is must */}
-      {/* <Provider> */}
+      <Provider>
         <body>
           <div className="main">
             <div className="gradient"></div>
           </div>
           <main className="app">
-            {/* <Nav /> */}
+            <Nav />
             {children}
           </main>
         </body>
-      {/* </Provider> */}
+      </Provider>
     </html>
   );
 };
 
 export default RootLayout;
-

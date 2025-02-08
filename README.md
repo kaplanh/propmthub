@@ -1,7 +1,7 @@
 # [PromptHub]
 
 **Welcome to our Workshop**, clone this repository to follow along.
-
+![PromptHub](https://github.com/user-attachments/assets/549ed402-71c6-4d62-8b61-b3be68d6614d)
 
 ## Tech Stack
 

@@ -4,32 +4,32 @@ import { useSession } from "next-auth/react";
 const Profile = () => {
     const { data: session } = useSession();
     return (
-        <div class="w-screen h-screen flex justify-center items-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <div className="w-screen h-screen flex justify-center items-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
             <Link href="/">
                 <img
-                    class="rounded-t-lg"
+                    className="rounded-t-lg"
                     src="/assets/images/logo.svg"
                     // src={session?.user.image}
                     alt=""
                 />
             </Link>
-            <div class="p-5">
+            <div className="p-5">
                 <Link href="/">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         Hello {session?.user.image} <br /> I'm Hüseyin
                     </h5>
                 </Link>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     I'm a Fullstack Developer. <br />
                     Let's shape the digital landscape together!
                 </p>
                 <Link
                     href="https://kaplanh.github.io/Portfolio/english.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                     Read more
                     <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

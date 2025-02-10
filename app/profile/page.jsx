@@ -8,15 +8,15 @@ const Profile = () => {
             <Link href="/">
                 <img
                     class="rounded-t-lg"
-                    // src="/assets/images/logo.svg"
-                    src={session?.user.image}
+                    src="/assets/images/logo.svg"
+                    // src={session?.user.image}
                     alt=""
                 />
             </Link>
             <div class="p-5">
                 <Link href="/">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Hello I'm Hüseyin
+                        Hello {session?.user.image} <br /> I'm Hüseyin
                     </h5>
                 </Link>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">

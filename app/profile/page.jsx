@@ -1,12 +1,15 @@
 import Link from "next/link";
 import React from "react";
+import { useSession } from "next-auth/react";
 const Profile = () => {
+    const { data: session } = useSession();
     return (
         <div class="w-screen h-screen flex justify-center items-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
             <Link href="/">
                 <img
                     class="rounded-t-lg"
-                    src="/assets/images/logo.svg"
+                    // src="/assets/images/logo.svg"
+                    src={session?.user.image}
                     alt=""
                 />
             </Link>

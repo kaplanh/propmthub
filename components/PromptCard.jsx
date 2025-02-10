@@ -19,7 +19,7 @@ const PromptCard = ({
       <div className="flex justify-between items-start gap-5">
         <div
           onClick={() => {
-            // router.push(`/profile/${prompt?.creator?._id}`);
+            router.push(`/profile/${prompt?.creator?._id}`);
           }}
           className="flex-1 flex justify-start items-center gap-3  cursor-pointer"
         >

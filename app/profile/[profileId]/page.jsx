@@ -17,13 +17,11 @@ const Profile = () => {
             <div className="p-5">
                 <Link href="/">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Hello {session?.user.name}
+                        Hello I'm {session?.user.name}
                     </h5>
                 </Link>
-                <h3 className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Congratulations, a prompt has been successfully created.
-                    <br />
-                    Would you like to create another prompt?
+                <h3 className="font-semibold">
+                    Would you like to contact with me?
                 </h3>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     {session?.user.email}
